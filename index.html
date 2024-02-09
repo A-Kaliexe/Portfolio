@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@100&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>  
+    <section class="navbar">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#home" id="home">Home</a></li>
+                    <li><a href="#about" id="about">About</a></li>
+                    <li><a href="#work" id="work">My Work</a></li>
+                    <li><a href="#contact" id="contact">Contact</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </section>
+    </header>
+<section class="hero">
+    <div>
+        <h1>Hi There! I'm <br>Kali Vanderbilt</h1>
+        <h5>Freelance frontend developer and web designer</h5>
+    </div>
+</section>
+<section class="flex-container">
+    <div class="about" id="about">
+        <h1 id="heading-about">About Me</h1>        
+        <p>I am a creative frontend developer. I am passionate in catering my works for ----- that make an impact, inspire and connect with people.</p><p> When I am not developing I enjoy spending times  reading some great books, playing games, or finding hidden gem restaurants.</p>
+        <p id="aboutparagraph">Hey there! I'm Kali. My journey into the world of coding began in an unexpected place: Myspace. It feels like ages ago now, but that's where I unknowingly took my first steps into the realm of coding. Playing around with customizing my profile sparked something inside me.
+            As I continued through high school, I found myself drawn to writing more and more lines of HTML and CSS code. It was like unlocking a new language, one that allowed me to bring my creative visions to life on the screen.
+            Despite my initial inclination towards a career in health, coding kept calling out to me. Years later, when I stumbled upon The Odin Project, I saw it as a way to fill my spare time with something I enjoyed. Little did I know, it would ignite a fire within me.
+            The journey through The Odin Project wasn't just about learning to code; it was about discovering a passion I didn't know I had. Each line of code I wrote felt like a piece of myself coming alive, a puzzle I couldn't wait to solve.
+            Since then, I've thrown myself into mastering programming languages like JavaScript. It's been a journey of self-discovery and growth, one that has brought me here, eager to share my skills and make a meaningful contribution to your business.</p>
+    </div>
+    <div class="image-container">
+        <!--img of me needed will need resizing-->
+        <img src="images\placeholderavatar.png" alt=""><!--add alt text to image and exchange image for self-->
+    </div>
+</section>
+<section>
+    <div class="work" id="work">
+        <h1>What I Do</h1>
+        <h2>Web Development</h2>
+        <p>*talk about web development*</p>
+        <h2>Web Design</h2>
+        <p>talk about web design</p>
+        <a href=""></a> <!-- add github link and maybe icon in css-->
+        <a href=""></a> <!-- add linkedin link and maybe icon in css-->
+    </div>
+</section>
+<section>
+    <div class="contact" id="contact">
+    <h6>Have a project in mind? Interested in collaborating?</h6>
+    <h1>Reach out to me</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sapiente quae excepturi nemo, officia eaque! Quibusdam quas a illum iure et tempore ad, iusto odio numquam. Doloremque numquam consectetur minus!</p>
+        
+    <!--add website to html so the form will send info-->
+    <!--Contact Form-->
+    <form action="/.html" method="POST">
+        <h1>Contact Form</h1>
+        <div class="form-name">
+            <label for="name">Your name:</label><br>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-email">
+            <label for="email">Your email:</label><br>
+            <input type="text" name="email" id="email" required>
+        </div>
+        <div class="form-message">
+            <label for="message">Your message:</label><br>
+            <textarea type="text" name="message" id="message"  rows="20" cols="50">
+                </textarea>
+        </div>
+        <div class="form-submit">
+            <button type="submit">Send Email</button>
+        </div>
+        </form>
+        </div>
+</section>
+<footer>
+        <div>
+            <p class="text-center">2024 - Kali Vanderbilt</p>
+        </div>
+        
+</footer>
+</body>
+</html>

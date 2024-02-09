@@ -1,0 +1,174 @@
+*{
+    font-family: 'Roboto','Roboto Slab', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    }
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("images/hallwaypink.jpg");
+    background-color: #ffe4c4;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid #ffffff px;
+    
+}
+
+header{
+
+}
+
+nav ul{
+list-style: none;
+text-align: right;
+padding-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a{
+    font-weight: 500;
+}
+
+li{
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #1f031a3f;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+
+
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1f031a3f;
+    color: #ffffff;
+    font-size: 48px;
+    margin-top: 100px;
+}
+
+.hero h1{
+    font-size: 96px;
+    font-weight:  600px;
+    text-align: wrap;
+}
+
+.flex-container{ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+} /*picture and about me description*/
+
+.aboutparagraph{
+    text-wrap: balance;
+}
+.about, .image-container{
+    flex:1;
+    margin: 2px;
+    line-height: 2rem;
+}
+
+img {
+    max-width:100%;
+    max-height: fit-content;
+}
+
+#heading-about,
+.text-center {
+    text-align: center;
+}
+
+    
+    
+
+    input[type=text], textarea{
+        width: 50%;
+        padding: 12px;
+        border: 2px solid #93E1D8;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+
+    button{
+        border-radius:8px;
+        box-shadow: 10px 8px 0px #4F5D75;
+        background-color: #93E1D8;
+        border: none;   
+        color: #000000;
+        padding: 12px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 30%;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    button:hover{
+        background-color: #000000;
+        color: #93E1D8;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 10px;
+        background-color: #00000062;/*might change color to match and increase margin*/
+        color: #ffffff;
+        font-size: 20px
+    }
+
+    .projects{
+        display: grid;
+        grid-gap: 2rem;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+    }
+
+.project-item{
+    border: 1px solid #c9c9c9;
+border-radius: 7px;
+box-shadow: 2px 2px 4px #00000026;
+overflow: hidden;
+}   
+/*grid placement*/
+
+
+background-size: cover;
+background-position: center;
+// 16:9 ratio
+padding-bottom: 62.5%; /*image for progjects*/
