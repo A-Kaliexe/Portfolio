@@ -19,7 +19,12 @@ body{
 }
 
 header{
-
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe4c4;
+    border: solid #ffffff;
 }
 
 nav ul{
@@ -52,10 +57,11 @@ li{
 
 a:hover,
 a:focus {
-    text-decoration: none;
+    text-decoration: none;  
     outline: none;
-    color: #ffffff;
-
+    color: #ffe4c4;
+    background-color: #1f031a3f;
+    border-radius: 10px;
 
 }
 
@@ -81,15 +87,21 @@ a:focus {
     justify-content: center;
     align-items: center;
     margin: 20%;
+
 } /*picture and about me description*/
 
 .aboutparagraph{
     text-wrap: balance;
+    font-size: 24px;
+    font-weight: 400px;
+    text-align: center;
+    margin: 20px;
 }
 .about, .image-container{
     flex:1;
     margin: 2px;
     line-height: 2rem;
+    
 }
 
 img {
