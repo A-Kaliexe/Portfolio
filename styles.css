@@ -1,9 +1,11 @@
 *{
     font-family: 'Roboto','Roboto Slab', sans-serif;
+    
 }
 
 html{
     scroll-behavior: smooth;
+    
     }
 
 body{
@@ -101,7 +103,7 @@ a:focus {
     flex:1;
     margin: 2px;
     line-height: 2rem;
-    
+
 }
 
 img {
@@ -150,6 +152,7 @@ img {
     button:hover{
         background-color: #000000;
         color: #93E1D8;
+        
     }
 
 
@@ -169,6 +172,7 @@ img {
         grid-gap: 2rem;
         justify-content: center;
         grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+    
     }
 
 .project-item{
@@ -178,6 +182,7 @@ box-shadow: 2px 2px 4px #00000026;
 overflow: hidden;
 }   
 /*grid placement*/
+
 
 
 background-size: cover;
