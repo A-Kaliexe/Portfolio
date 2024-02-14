@@ -63,40 +63,46 @@
     <p>talk about web design</p>
     <a href=""></a> add github link and maybe icon in css
     <a href=""></a> add linkedin link and maybe icon in css
+<
 -->
 
 </section>
-<section>
-    <div class="contact" id="contact">
-    <h3>Have a project in mind? Interested in collaborating?</h3>
-    <h3>Reach out to me</h3>
-        
-    <!--add website to html so the form will send info-->
-    <!--Contact Form-->
-    <form action="/.html" method="POST">
-        <h3>Contact Form</h3>
-        <div class="form-name">
-            <label for="name">Your name:</label><br>
-            <input type="text" name="name" id="name" required>
+<section class="contactform">
+    <div class="contact-container">
+        <h2>Contact Form</h2>
+        <div class="contact-form">
+            <div class="form-section">
+                <h3>How to Get in Touch</h3>
+                <p>If you have any questions or inquiries, feel free to fill out the form below.</p>
+            </div>
+            <form action="/.html" method="POST" class="form-section">
+                <div class="form-name">
+                    <label for="name">Your name:</label><br>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-email">
+                    <label for="email">Your email:</label><br>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                <div class="form-message">
+                    <label for="message">Your message:</label><br>
+                    <textarea type="text" name="message" id="message" rows="5" required></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
         </div>
-        <div class="form-email">
-            <label for="email">Your email:</label><br>
-            <input type="text" name="email" id="email" required>
+        <div class="contact-info">
+            <p>If you prefer to contact us directly, you can reach us at contact@example.com</p>
         </div>
-        <div class="form-message">
-            <label for="message">Your message:</label><br>
-            <textarea type="text" name="message" id="message"  rows="20" cols="50">
-                </textarea>
-        </div>
-        <div class="form-submit">
-            <button type="submit">Send Email</button>
-        </div>
+    </div>
         </form>
 </section>
 <footer>
-        <div>
-            <p class="text-center">2024 - Kali Vanderbilt</p>
-        </div>
+   
+        <p> Website by Kali Vanderbilt 2024</p>
+    </div>
         
 </footer>
 </body>
