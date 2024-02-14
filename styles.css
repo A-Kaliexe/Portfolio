@@ -1,55 +1,47 @@
 *{
-    font-family: 'Roboto','Roboto Slab', sans-serif;
-    
+    font-family: 'Roboto', 'Roboto Slab', sans-serif;
+    outline: 1px solid red;
 }
 
-html{
+html {
     scroll-behavior: smooth;
-    
-    }
 
-body{
-    height: 100%;
-    width: 100%;
+}
+
+body {
     background-image: url("images/hallwaypink.jpg");
     background-color: #ffe4c4;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: solid #ffffff px;
-    
 }
 
-header{
-    height: 100px;
-    width: 100%;
+header {
     justify-content: space-between;
     align-items: center;
-    background-color: #ffe4c4;
-    border: solid #ffffff;
 }
 
-nav ul{
-list-style: none;
-text-align: right;
-padding-right: 60px;
+nav ul {
+    list-style: none;
+    text-align: right;
+    padding-right: 60px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
-    margin: 10px 20px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #ffffff;
 }
 
-a{
+a {
     font-weight: 500;
+    font-size: 20px;
 }
 
-li{
+li {
     display: inline-block;
     margin: 10px 20px;
     padding: 10px 20px;
@@ -59,134 +51,155 @@ li{
 
 a:hover,
 a:focus {
-    text-decoration: none;  
+    text-decoration: none;
     outline: none;
-    color: #ffe4c4;
+    color: #93E1D8;
     background-color: #1f031a3f;
-    border-radius: 10px;
-
 }
 
-.hero{
+.hero {
     display: flex;
+    min-width: 0;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     background-color: #1f031a3f;
     color: #ffffff;
-    font-size: 48px;
-    margin-top: 100px;
+    margin-top: 150px;
+    font-size: 60px;
+    font-weight: 600;
 }
 
-.hero h1{
-    font-size: 96px;
-    font-weight:  600px;
-    text-align: wrap;
-}
+ h2 {
+    font-size: smaller;
+    justify-content: center;
+   
+ }
 
-.flex-container{ 
-    display:flex;
+ h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+ }
+
+.aboutsection {
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20%;
+    margin: 10%;
+    gap: 25px;
+    background-color: #1f031a3f;
+    line-height: 1.9rem;
 
-} /*picture and about me description*/
+} 
 
-.aboutparagraph{
-    text-wrap: balance;
-    font-size: 24px;
-    font-weight: 400px;
-    text-align: center;
-    margin: 20px;
-}
-.about, .image-container{
-    flex:1;
-    margin: 2px;
-    line-height: 2rem;
+/*  about me and picture description */
+
+.about {
+    width: 1000px;
 
 }
 
-img {
-    max-width:100%;
+.selfimg {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00000080;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+.selfimg:hover {
+    box-shadow: 0 0 20px #00000080;
+    transform: scale(1.1);
+}
+
+img, {
+    width:auto;
     max-height: fit-content;
 }
 
+
 #heading-about,
-.text-center {
+.text-center, h1 {
     text-align: center;
 }
 
-    
-    
+/*contact information*/
+.contact{
+ 
+}
 
-    input[type=text], textarea{
-        width: 50%;
-        padding: 12px;
-        border: 2px solid #93E1D8;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-    }
+input[type=text], textarea {
+    width: 50%;
+    padding: 12px;
+    border: 2px solid #93E1D8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
 
+button {
+    border-radius: 8px;
+    box-shadow: 10px 8px 0px #4F5D75;
+    background-color: #93E1D8;
+    border: none;
+    color: #000000;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
 
-    button{
-        border-radius:8px;
-        box-shadow: 10px 8px 0px #4F5D75;
-        background-color: #93E1D8;
-        border: none;   
-        color: #000000;
-        padding: 12px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        width: 30%;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    
-    button:hover{
-        background-color: #000000;
-        color: #93E1D8;
-        
-    }
+button:hover {
+    background-color: #000000;
+    color: #93E1D8;
+}
 
 
-    footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 10px 10px;
-        background-color: #00000062;/*might change color to match and increase margin*/
-        color: #ffffff;
-        font-size: 20px
-    }
 
-    .projects{
-        display: grid;
-        grid-gap: 2rem;
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
-    
-    }
+/*grid items*/
 
-.project-item{
+.projects {
+    display: grid;
+    background-color: #1f031a3f;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    box-shadow: 0 4px 8px #00000080;
+}
+
+.grid-item {
     border: 1px solid #c9c9c9;
-border-radius: 7px;
-box-shadow: 2px 2px 4px #00000026;
-overflow: hidden;
-}   
-/*grid placement*/
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px #00000026;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    max-height: auto;
+}
+.grid-item:hover {
+    box-shadow: 0 8px 16px 0 #00000080, 0 6px 20px 0 #00000030;
+    transition: 0.3s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
 
-
-background-size: cover;
-background-position: center;
-// 16:9 ratio
-padding-bottom: 62.5%; /*image for progjects*/
-this is to see if it comits to Github repo
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #00000080; /* might change color to match and increase margin */
+    color: #ffffff;
+    font-size: 20px;
+}

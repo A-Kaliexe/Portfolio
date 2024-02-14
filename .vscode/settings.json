@@ -1,0 +1,22 @@
+{
+    "editor.linkedEditing": true,
+    "cSpell.words": [
+        "hallwaypink"
+    ]
+}
+
+VS Code settings:
+{
+    "liveServer.settings.port": 4500,
+    "liveServer.settings.root": "/src",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --incognito --remote-debugging-port=9222",
+    "liveServer.settings.NoBrowser" : false,
+    "liveServer.settings.ignoreFiles" : [
+            ".vscode/**",
+            "**/*.scss",
+            "**/*.sass"
+    ]
+
+}
+
+<script src="https://kit.fontawesome.com/49faf8cbf1.js" crossorigin="anonymous"></script>
