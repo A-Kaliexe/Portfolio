@@ -143,10 +143,17 @@ img, {
 }
 
 /*contact information*/
-.contact{
- 
+.contactform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+    .contact-container{
+        flex: 1;
+        background-color:;
+        border-radius: 10px;
+    }
 input[type=text], textarea {
     width: 50%;
     padding: 12px;
