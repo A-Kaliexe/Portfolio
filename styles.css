@@ -250,6 +250,18 @@ button[type="submit"]:hover {
     cursor: pointer;
 }
 
+.social-links img {
+    box-shadow: 0 4px 8px #00000080;
+    width: 40px; 
+    height: auto; 
+    vertical-align: middle; 
+    margin: 0 10px;
+
+}
+.social-links a { 
+    background-color: initial;
+    text-decoration: none;
+}
 
 footer {
     display: flex;
@@ -263,10 +275,9 @@ footer {
 
 
 
-/* Gold for decorative elements */
-.icon {
-    color: #ffd700; 
-}
+
+
+
 
 @media only screen and (max-width: 768px) {
     body {
