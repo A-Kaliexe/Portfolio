@@ -5,31 +5,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
 
-html {
-    scroll-behavior: smooth;
-
-}
 img,
 picture,
 video {
   max-width: 100%;
 }
+
 body {
     background-image: url("images/hallwaypink.jpg");
-    background-color: #e6f2ff;;
+    background-color: #e6f2ff;
+    color: #fff;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Roboto', 'Roboto Slab', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    
-
 }
 
 h1, h2, h3, legend, label, button {
@@ -57,10 +49,10 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
 }
 
 a {
+    color:#fff;
     font-weight: 500;
     font-size: 20px;
 }
@@ -77,7 +69,7 @@ a:hover,
 a:focus {
     text-decoration: none;
     outline: none;
-    color: #93E1D8;
+    color: #93c9d2;;
     background-color: #1f031a3f;
 }
 
@@ -90,14 +82,12 @@ a:focus {
     flex-direction: column;
     justify-content: center;
     background-color: #1f031a3f;
-    color: #ffffff;
     margin-top: 150px;
     font-size: 60px;
     font-weight: 600;
 }
 
  h2 {
-    
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px #00000033;
  }
@@ -108,11 +98,8 @@ a:focus {
 
  h2, h3 {
     font-size: 30px;
-    font-weight: 600;
     text-align: center;  
 }
-
-
 
 
 .aboutsection {
@@ -128,26 +115,41 @@ a:focus {
 
 /*  about me and picture description */
 
-.about {
-    width: 1000px;
+.aboutsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px; 
+    align-items: center;
+}
 
+
+
+.about h3 {
+    font-size: 32px; 
+}
+
+.about p {
+    font-size: 18px; 
+    line-height: 1.8; 
+}
+
+.image-container {
+    max-width: 300px; 
 }
 
 .selfimg {
-    width: 250px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #00000080;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-    position: relative;
+    width: 100%
+    border-radius: 100%; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
 }
 
 .selfimg:hover {
-    box-shadow: 0 0 20px #00000080;
-    transform: scale(1.1);
+    transform: scale(1.05); 
 }
 
-img, {
+
+img {
     width:auto;
     max-height: fit-content;
 }
@@ -172,14 +174,13 @@ img, {
 }
 
 fieldset {
-    border: 2px solid #ccc;
+    border: 2px solid;
     border-radius: 10px;
     padding: 20px;
 }
 
 legend { 
     font-size: 24px;
-    color: #333;
     margin-bottom: 20px;
 }
 
@@ -193,7 +194,6 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -205,14 +205,15 @@ textarea {
 button[type="submit"] {
     border-radius: 8px;
     box-shadow: 10px 8px 0px #4F5D75;
-    background-color: #93E1D8;
+    background-color: #93c9d2;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color:#ffad9e; 
+    color:#ffffff;
 }
 
 /*grid items*/
@@ -228,13 +229,19 @@ button[type="submit"]:hover {
 .grid-item {
     border: 1px solid #c9c9c9;
     border-radius: 7px;
-    box-shadow: 2px 2px 4px #00000026;
+    box-shadow: 2px 2px 4px #00000030;
     overflow: hidden;
 }
 
 .grid-item img {
     width: 100%;
     max-height: auto;
+}
+
+.description {
+    padding: 10px;
+    background-color: #00000030; 
+    text-align: center;
 }
 .grid-item:hover {
     box-shadow: 0 8px 16px 0 #00000080, 0 6px 20px 0 #00000030;
@@ -251,6 +258,63 @@ footer {
     align-items: center;
     margin: 10px;
     background-color: #00000080; /* might change color to match and increase margin */
-    color: #ffffff;
     font-size: 20px;
+}
+
+
+
+/* Gold for decorative elements */
+.icon {
+    color: #ffd700; 
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    nav ul {
+        text-align: center;
+        padding-right: 0; 
+    }
+
+    nav ul li {
+        display: block; 
+        margin: 10px 0; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%; 
+        padding: 12px; 
+        margin-bottom: 15px; 
+    }
+    button[type="submit"] {
+        padding: 14px 24px; 
+        font-size: 18px; 
+}
+.aboutsection {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 20px; /* Add gap between items */
+    align-items: center; /* Center-align items */
+}
+
+.about {
+    width: 100%; /* Full width */
+    max-width: 100%; /* Make sure it doesn't exceed screen width */
+}
+
+.image-container {
+    width: 100%; /* Full width */
+    max-width: 250px; /* Limit maximum width */
+}
+
+.selfimg {
+    width: 100%; /* Make image responsive */
+}
 }
