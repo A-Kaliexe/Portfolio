@@ -1,6 +1,9 @@
 *{
-    font-family: 'Roboto', 'Roboto Slab', sans-serif;
     outline: 1px solid red;
+    /* Reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -11,13 +14,26 @@ html {
     scroll-behavior: smooth;
 
 }
-
+img,
+picture,
+video {
+  max-width: 100%;
+}
 body {
     background-image: url("images/hallwaypink.jpg");
     background-color: #e6f2ff;;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Roboto', 'Roboto Slab', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    
+
+}
+
+h1, h2, h3, legend, label, button {
+    font-weight: bold;
 }
 
 header {
@@ -143,50 +159,61 @@ img, {
 }
 
 /*contact information*/
-.contactform{
+.contactform {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 
-    .contact-container{
-        flex: 1;
-        background-color:;
-        border-radius: 10px;
-    }
-input[type=text], textarea {
-    width: 50%;
-    padding: 12px;
-    border: 2px solid #93E1D8;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+.form-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend { 
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+textarea {
     resize: vertical;
 }
 
-button {
+button[type="submit"] {
     border-radius: 8px;
     box-shadow: 10px 8px 0px #4F5D75;
     background-color: #93E1D8;
-    border: none;
-    color: #000000;
     padding: 12px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
+    border: none;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 20px;
 }
 
-button:hover {
-    background-color: #000000;
-    color: #93E1D8;
+button[type="submit"]:hover {
+    background-color: #0056b3;
 }
-
-
 
 /*grid items*/
 

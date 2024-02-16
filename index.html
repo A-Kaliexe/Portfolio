@@ -55,37 +55,32 @@
         </div>
     </section>
     <section class="contactform" id="contact">
-        <div class="contact-container">
-            <h3>Contact Form</h3>
-            <div class="contact-form">
-                <div class="form-section">
-                    <h2>How to Get in Touch</h2>
-                    <p>If you have any questions or inquiries, feel free to fill out the form below.</p>
-                </div>
-                <form action="" method="POST" class="form-section"><!-- Form fields action -->
+        <form action="" method="POST" class="form-section">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <div class="contact-container">
+                    <div class="form-section">
+                        <h2>How to Get in Touch</h2>
+                        <p>If you have any questions or inquiries, feel free to fill out the form below.</p>
+                    </div>
                     <div class="form-name">
                         <label for="name">Your name:</label><br>
                         <input type="text" name="name" id="name" required>
                     </div>
                     <div class="form-email">
                         <label for="email">Your email:</label><br>
-                        <input type="text" name="email" id="email" required>
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="form-message">
                         <label for="message">Your message:</label><br>
-                        <textarea type="text" name="message" id="message" rows="5" required></textarea>
+                        <textarea name="message" id="message" rows="5" required></textarea>
                     </div>
                     <div class="form-submit">
                         <button type="submit">Send Message</button>
                     </div>
-                </form>
-                <div class="contact-image">
-                    <!-- Your image goes here -->
-                    <img src="your-image.jpg" alt="Contact Image">
-                  </div>
-            </div>
-            
-        </div>
+                </div>
+            </fieldset>
+        </form>
     </section>
     <footer>
         <p> Website by Kali Vanderbilt 2024</p>
