@@ -10,11 +10,31 @@ img,
 picture,
 video {
   max-width: 100%;
-}
 
+/* Split image background 
+.hero,  {
+    background-image: url("images/hallwaypink-split1.jpg");
+    background-size: cover;
+    height: 50vh; 
+}
+.aboutsection{
+    background-image: url("images/hallwaypink-split1.jpg");
+}
+header {
+    background-image: url("images/hallwaypink-split1.jpg");
+    background-size: cover;
+    height: 20vh; 
+    position: relative;
+    z-index: 1;
+}
+footer {
+    background-image: url("images/hallwaypink-split2.jpg");
+    background-size: cover;
+    height: 5vh;*/
+}
 body {
     background-image: url("images/hallwaypink.jpg");
-    background-color: #e6f2ff;
+    background-color: #4d8294;
     color: #fff;
     background-position: center;
     background-size: cover;
@@ -22,6 +42,7 @@ body {
     font-family: 'Roboto', 'Roboto Slab', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    height: 25%;
 }
 
 h1, h2, h3, legend, label, button {
@@ -89,19 +110,34 @@ a:focus {
 
  h2 {
     margin-bottom: 10px;
-    text-shadow: 1px 1px 2px #00000033;
- }
-
- h3 {
-    
- }
-
- h2, h3 {
+    text-shadow: 1px 1px 2px #000000;
     font-size: 30px;
     text-align: center;  
 }
+    /*New aboutSection might change* 2/16/24*/
+.aboutsection {
+    background-color: #e6f2ff; /* Off-white background color */
+    color: #000; /* Dark text color */
+    padding: 50px; /* Add padding for spacing */
+    display: flex;
+    
+    justify-content: space-between; /* Ensure content and image are spaced evenly */
+    align-items: center; /* Center content vertically */
+}
 
+.about {
+    max-width: 600px; /* Limit width of text content */
+}
 
+.about h2 {
+    font-size: 30px; /* Adjust heading size */
+}
+
+.about p {
+    font-size: 16px; /* Adjust paragraph font size */
+    line-height: 1.5; /* Add line height for better readability */
+}
+/* old aboutmesection 2/15/24
 .aboutsection {
     display: flex;
     justify-content: center;
@@ -113,16 +149,12 @@ a:focus {
 
 } 
 
-/*  about me and picture description */
-
 .aboutsection {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 50px; 
     align-items: center;
 }
-
-
 
 .about h3 {
     font-size: 32px; 
@@ -131,7 +163,7 @@ a:focus {
 .about p {
     font-size: 18px; 
     line-height: 1.8; 
-}
+}*/
 
 .image-container {
     max-width: 300px; 
@@ -263,7 +295,9 @@ button[type="submit"]:hover {
     text-decoration: none;
 }
 
-footer {
+/* Footer Styles */
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
