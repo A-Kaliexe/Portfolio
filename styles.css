@@ -1,24 +1,61 @@
 *{
-    font-family: 'Roboto', 'Roboto Slab', sans-serif;
     outline: 1px solid red;
+    /* Reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+img,
+picture,
+video {
+  max-width: 100%;
 
+/* Split image background 
+.hero,  {
+    background-image: url("images/hallwaypink-split1.jpg");
+    background-size: cover;
+    height: 50vh; 
 }
-
+.aboutsection{
+    background-image: url("images/hallwaypink-split1.jpg");
+}
+header {
+    background-image: url("images/hallwaypink-split1.jpg");
+    background-size: cover;
+    height: 20vh; 
+    position: relative;
+    z-index: 1;
+}
+footer {
+    background-image: url("images/hallwaypink-split2.jpg");
+    background-size: cover;
+    height: 5vh;*/
+}
 body {
     background-image: url("images/hallwaypink.jpg");
-    background-color: #ffe4c4;
+    background-color: #4d8294;
+    color: #fff;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Roboto', 'Roboto Slab', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 25%;
+}
+
+h1, h2, h3, legend, label, button {
+    font-weight: bold;
 }
 
 header {
     justify-content: space-between;
     align-items: center;
+}
+
+section {
+    padding: 50px;
 }
 
 nav ul {
@@ -33,10 +70,10 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
 }
 
 a {
+    color:#fff;
     font-weight: 500;
     font-size: 20px;
 }
@@ -53,9 +90,11 @@ a:hover,
 a:focus {
     text-decoration: none;
     outline: none;
-    color: #93E1D8;
+    color: #93c9d2;;
     background-color: #1f031a3f;
 }
+
+
 
 .hero {
     display: flex;
@@ -64,24 +103,41 @@ a:focus {
     flex-direction: column;
     justify-content: center;
     background-color: #1f031a3f;
-    color: #ffffff;
     margin-top: 150px;
     font-size: 60px;
     font-weight: 600;
 }
 
  h2 {
-    font-size: smaller;
-    justify-content: center;
-   
- }
-
- h3 {
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #000000;
     font-size: 30px;
-    font-weight: 600;
-    text-align: center;
- }
+    text-align: center;  
+}
+    /*New aboutSection might change* 2/16/24*/
+.aboutsection {
+    background-color: #e6f2ff; /* Off-white background color */
+    color: #000; /* Dark text color */
+    padding: 50px; /* Add padding for spacing */
+    display: flex;
+    
+    justify-content: space-between; /* Ensure content and image are spaced evenly */
+    align-items: center; /* Center content vertically */
+}
 
+.about {
+    max-width: 600px; /* Limit width of text content */
+}
+
+.about h2 {
+    font-size: 30px; /* Adjust heading size */
+}
+
+.about p {
+    font-size: 16px; /* Adjust paragraph font size */
+    line-height: 1.5; /* Add line height for better readability */
+}
+/* old aboutmesection 2/15/24
 .aboutsection {
     display: flex;
     justify-content: center;
@@ -93,28 +149,39 @@ a:focus {
 
 } 
 
-/*  about me and picture description */
+.aboutsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px; 
+    align-items: center;
+}
 
-.about {
-    width: 1000px;
+.about h3 {
+    font-size: 32px; 
+}
 
+.about p {
+    font-size: 18px; 
+    line-height: 1.8; 
+}*/
+
+.image-container {
+    max-width: 300px; 
 }
 
 .selfimg {
-    width: 250px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #00000080;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-    position: relative;
+    width: 100%
+    border-radius: 100%; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
 }
 
 .selfimg:hover {
-    box-shadow: 0 0 20px #00000080;
-    transform: scale(1.1);
+    transform: scale(1.05); 
 }
 
-img, {
+
+img {
     width:auto;
     max-height: fit-content;
 }
@@ -126,6 +193,7 @@ img, {
 }
 
 /*contact information*/
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 .contact-wrapper {
     width: 80%;
@@ -175,6 +243,46 @@ input[type=text], textarea {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
+=======
+.contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.form-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend { 
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+textarea {
+>>>>>>> 4e0fffaba0c016016061390f771e7910827a67da
     resize: vertical;
 <<<<<<< Updated upstream
     color: #4F5D75; /* Dark text color for better contrast */
@@ -182,7 +290,7 @@ input[type=text], textarea {
 >>>>>>> Stashed changes
 }
 
-button {
+button[type="submit"] {
     border-radius: 8px;
 <<<<<<< Updated upstream
     background-color: #93E1D8;
@@ -190,16 +298,18 @@ button {
     color: #4F5D75; /* Dark text color for better contrast */
 =======
     box-shadow: 10px 8px 0px #4F5D75;
+<<<<<<< HEAD
     background-color: #93E1D8;
     border: none;
     color: #000000;
 >>>>>>> Stashed changes
+=======
+    background-color: #93c9d2;
+>>>>>>> 4e0fffaba0c016016061390f771e7910827a67da
     padding: 12px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
+    border: none;
     cursor: pointer;
+<<<<<<< HEAD
     font-weight: bold;
     font-size: 20px;
 <<<<<<< Updated upstream
@@ -215,9 +325,14 @@ button:hover {
     background-color: #000000;
 >>>>>>> Stashed changes
     color: #93E1D8;
+=======
 }
 
-
+button[type="submit"]:hover {
+    background-color:#ffad9e; 
+    color:#ffffff;
+>>>>>>> 4e0fffaba0c016016061390f771e7910827a67da
+}
 
 /*grid items*/
 
@@ -232,13 +347,19 @@ button:hover {
 .grid-item {
     border: 1px solid #c9c9c9;
     border-radius: 7px;
-    box-shadow: 2px 2px 4px #00000026;
+    box-shadow: 2px 2px 4px #00000030;
     overflow: hidden;
 }
 
 .grid-item img {
     width: 100%;
     max-height: auto;
+}
+
+.description {
+    padding: 10px;
+    background-color: #00000030; 
+    text-align: center;
 }
 .grid-item:hover {
     box-shadow: 0 8px 16px 0 #00000080, 0 6px 20px 0 #00000030;
@@ -248,7 +369,23 @@ button:hover {
 }
 <<<<<<< Updated upstream
 
+.social-links img {
+    box-shadow: 0 4px 8px #00000080;
+    width: 40px; 
+    height: auto; 
+    vertical-align: middle; 
+    margin: 0 10px;
 
+}
+.social-links a { 
+    background-color: initial;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+
+
+<<<<<<< HEAD
 footer {
     align-items: center;
 }
@@ -260,12 +397,70 @@ footer {
 
 footer {
 >>>>>>> Stashed changes
+=======
+>>>>>>> 4e0fffaba0c016016061390f771e7910827a67da
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 10px;
     background-color: #00000080; /* might change color to match and increase margin */
-    color: #ffffff;
     font-size: 20px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    nav ul {
+        text-align: center;
+        padding-right: 0; 
+    }
+
+    nav ul li {
+        display: block; 
+        margin: 10px 0; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%; 
+        padding: 12px; 
+        margin-bottom: 15px; 
+    }
+    button[type="submit"] {
+        padding: 14px 24px; 
+        font-size: 18px; 
+}
+.aboutsection {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 20px; /* Add gap between items */
+    align-items: center; /* Center-align items */
+}
+
+.about {
+    width: 100%; /* Full width */
+    max-width: 100%; /* Make sure it doesn't exceed screen width */
+}
+
+.image-container {
+    width: 100%; /* Full width */
+    max-width: 250px; /* Limit maximum width */
+}
+
+.selfimg {
+    width: 100%; /* Make image responsive */
+}
 }
