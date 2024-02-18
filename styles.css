@@ -444,6 +444,57 @@ img {
 }
 
 /*contact information*/
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+.contact-wrapper {
+    width: 80%;
+    max-width: 600px;
+    background-color: #9e047d56; /* Background with opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0000001a;
+}
+
+h2, h3 {
+    text-align: center;
+    
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-section {
+    background-color: #9e047d56;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-section p {
+    margin: 0;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+=======
+.contact{
+ 
+}
+
+input[type=text], textarea {
+    width: 50%;
+>>>>>>> Stashed changes
+    padding: 12px;
+    border: 2px solid #93E1D8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+=======
 .contactform {
     display: flex;
     justify-content: center;
@@ -482,21 +533,56 @@ textarea {
 }
 
 textarea {
+>>>>>>> 4e0fffaba0c016016061390f771e7910827a67da
     resize: vertical;
+<<<<<<< Updated upstream
+    color: #4F5D75; /* Dark text color for better contrast */
+=======
+>>>>>>> Stashed changes
 }
 
 button[type="submit"] {
     border-radius: 8px;
+<<<<<<< Updated upstream
+    background-color: #93E1D8;
+    border: none;
+    color: #4F5D75; /* Dark text color for better contrast */
+=======
     box-shadow: 10px 8px 0px #4F5D75;
+<<<<<<< HEAD
+    background-color: #93E1D8;
+    border: none;
+    color: #000000;
+>>>>>>> Stashed changes
+=======
     background-color: #93c9d2;
+>>>>>>> 4e0fffaba0c016016061390f771e7910827a67da
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+<<<<<<< HEAD
+    font-weight: bold;
+    font-size: 20px;
+<<<<<<< Updated upstream
+   
+}
+
+button:hover {
+    background-color: #4F5D75;
+=======
+}
+
+button:hover {
+    background-color: #000000;
+>>>>>>> Stashed changes
+    color: #93E1D8;
+=======
 }
 
 button[type="submit"]:hover {
     background-color:#ffad9e; 
     color:#ffffff;
+>>>>>>> 4e0fffaba0c016016061390f771e7910827a67da
 }
 
 /*grid items*/
@@ -532,6 +618,7 @@ button[type="submit"]:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
+<<<<<<< Updated upstream
 
 .social-links img {
     box-shadow: 0 4px 8px #00000080;
@@ -549,6 +636,20 @@ button[type="submit"]:hover {
 /* Footer Styles */
 
 
+<<<<<<< HEAD
+footer {
+    align-items: center;
+}
+
+
+
+=======
+
+
+footer {
+>>>>>>> Stashed changes
+=======
+>>>>>>> 4e0fffaba0c016016061390f771e7910827a67da
     display: flex;
     flex-direction: column;
     justify-content: center;
